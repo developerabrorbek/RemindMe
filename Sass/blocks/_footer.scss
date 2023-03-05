@@ -1,0 +1,80 @@
+.footer {
+  &__inner {
+    padding: 0 16px;
+  }
+
+  &-info {
+    margin-bottom: 40px;
+
+    &__logo {
+      padding-left: 36px;
+      transform: scale(1.9);
+      margin-bottom: 38px;
+    }
+
+    &__subtitle {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 36px;
+      color: #747474;
+    }
+  }
+
+  &-links {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  &-map,
+  &-advantage {
+    &__title {
+      font-size: 24px;
+      line-height: 36px;
+      color: #000000;
+      margin: 0;
+      margin-bottom: 30px;
+      margin-left: -18px;
+    }
+
+    &__item {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 36px;
+      color: #2d76f9;
+
+      &-link {
+        text-decoration: none;
+        color: #747474;
+      }
+    }
+  }
+
+  &-socials {
+    padding-left: 0;
+
+    &__title {
+      font-size: 24px;
+      line-height: 36px;
+      color: #000000;
+      margin: 0;
+      margin-bottom: 30px;
+      margin-left: 10px;
+    }
+
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      column-gap: 42px;
+    }
+
+    &__item {
+      list-style-type: none;
+      padding-left: 0;
+      color: #2d76f9;
+
+      &-link {
+        text-decoration: none;
+      }
+    }
+  }
+}

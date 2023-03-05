@@ -555,6 +555,7 @@ img {
   align-items: center;
   row-gap: 50px;
   padding-left: 0;
+  margin-left: 0;
   list-style-type: none;
 }
 .manage-card {
@@ -703,7 +704,7 @@ img {
 }
 .download .oval-second {
   top: calc(50% + 101px);
-  left: 50%;
+  left: calc(100% - 188px);
 }
 
 .comment {
@@ -752,4 +753,68 @@ img {
 }
 .comment-next__right {
   transform: rotate(180deg);
+}
+
+.footer__inner {
+  padding: 0 16px;
+}
+.footer-info {
+  margin-bottom: 40px;
+}
+.footer-info__logo {
+  padding-left: 36px;
+  transform: scale(1.9);
+  margin-bottom: 38px;
+}
+.footer-info__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  color: #747474;
+}
+.footer-links {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.footer-map__title, .footer-advantage__title {
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 30px;
+  margin-left: -18px;
+}
+.footer-map__item, .footer-advantage__item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  color: #2d76f9;
+}
+.footer-map__item-link, .footer-advantage__item-link {
+  text-decoration: none;
+  color: #747474;
+}
+.footer-socials {
+  padding-left: 0;
+}
+.footer-socials__title {
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+.footer-socials__wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 42px;
+}
+.footer-socials__item {
+  list-style-type: none;
+  padding-left: 0;
+  color: #2d76f9;
+}
+.footer-socials__item-link {
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
