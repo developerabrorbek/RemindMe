@@ -1,21 +1,128 @@
-.header{
+.header {
+  margin-bottom: 50px;
 
-    margin-bottom: 50px;
+  &__inner {
+    padding: 25px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    &__inner{
-        padding: 25px 8px;
+  &-menu {
+    &__burger {
+      width: 50px;
+      height: 50px;
+      border: 1.5px solid #2d76f9;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__nav {
+      display: none;
+    }
+  }
+
+  &-btn {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .header {
+    &__inner {
+      padding: 25px 16px;
+    }
+
+    &-menu__burger {
+      border: 2px solid #2d76f9;
+    }
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .header {
+    &__inner {
+      padding: 25px 32px;
+    }
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .header {
+    &__inner {
+      padding: 30px 36px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    margin-bottom: 64px;
+
+    &__inner {
+      padding: 32px 18px;
+    }
+
+    &-menu {
+      &__burger {
+        display: none;
+      }
+
+      &__nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        column-gap: 42px;
+        list-style-type: none;
+
+        &--item {
+          width: 92px;
+
+          &-link {
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color: #212121;
+          }
+
+          .active {
+            font-weight: 700;
+            color: #2d76f9;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .header {
+    &__inner {
+      padding: 25px 80px;
     }
 
-    &-menu{
-        width: 50px;
-        height: 50px;
-        border: 1.5px solid #2D76F9;
-        border-radius: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    &-btn {
+      display: block;
+      border: 1.5px solid #2d76f9;
+      border-radius: 50px;
+      padding: 12px 40px;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: #2d76f9;
     }
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .header {
+        &__inner {
+          padding: 25px 100px;
+        }
+      }
 }

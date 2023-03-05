@@ -391,7 +391,7 @@ img {
 }
 
 .container {
-  min-width: 375px;
+  min-width: 325px;
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -401,21 +401,98 @@ img {
   margin-bottom: 50px;
 }
 .header__inner {
-  padding: 25px 8px;
+  padding: 25px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.header-menu {
+.header-menu__burger {
   width: 50px;
   height: 50px;
-  border: 1.5px solid #2D76F9;
+  border: 1.5px solid #2d76f9;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.header-menu__nav {
+  display: none;
+}
+.header-btn {
+  display: none;
+}
 
+@media only screen and (min-width: 375px) {
+  .header__inner {
+    padding: 25px 16px;
+  }
+  .header-menu__burger {
+    border: 2px solid #2d76f9;
+  }
+}
+@media only screen and (min-width: 414px) {
+  .header__inner {
+    padding: 25px 32px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .header__inner {
+    padding: 30px 36px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    margin-bottom: 64px;
+  }
+  .header__inner {
+    padding: 32px 18px;
+  }
+  .header-menu__burger {
+    display: none;
+  }
+  .header-menu__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 42px;
+    list-style-type: none;
+  }
+  .header-menu__nav--item {
+    width: 92px;
+  }
+  .header-menu__nav--item-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #212121;
+  }
+  .header-menu__nav--item .active {
+    font-weight: 700;
+    color: #2d76f9;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header__inner {
+    padding: 25px 80px;
+  }
+  .header-btn {
+    display: block;
+    border: 1.5px solid #2d76f9;
+    border-radius: 50px;
+    padding: 12px 40px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2d76f9;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header__inner {
+    padding: 25px 100px;
+  }
+}
 .hero-body {
   margin-bottom: 50px;
   padding: 0 8px;
@@ -776,6 +853,9 @@ img {
   display: grid;
   grid-template-columns: auto auto;
 }
+.footer-map, .footer-advantage {
+  padding-left: 24px;
+}
 .footer-map__title, .footer-advantage__title {
   font-size: 24px;
   line-height: 36px;
@@ -813,8 +893,8 @@ img {
 .footer-socials__item {
   list-style-type: none;
   padding-left: 0;
-  color: #2d76f9;
 }
 .footer-socials__item-link {
   text-decoration: none;
+  color: #2d76f9;
 }/*# sourceMappingURL=main.css.map */
