@@ -1,0 +1,74 @@
+.download {
+  &__inner {
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  &-wrapper {
+    position: relative;
+    background: #2d76f9;
+    border-radius: 25px;
+    padding: 50px 37px;
+    overflow: hidden;
+  }
+
+  &-title {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  &-links {
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+
+    &__load {
+      text-decoration: none;
+      background: #ffffff;
+      border-radius: 1500px;
+      padding: 24px 58px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      color: #2d76f9;
+    }
+
+    &__about {
+      text-decoration: none;
+      background: #2d76f9;
+      border: 1.5px solid #ffffff;
+      border-radius: 1500px;
+      padding: 24px 76px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      color: #ffffff;
+    }
+  }
+
+  .oval-first,
+  .oval-second {
+    position: absolute;
+    width: 302px;
+    height: 302px;
+    border: 50px solid #4587ff;
+    border-radius: 50%;
+    top: -151px;
+    left: -151px;
+  }
+
+  .oval-second {
+    top: calc(50% + 101px);
+    left: calc(50%);
+  }
+}
