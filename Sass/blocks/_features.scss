@@ -1,0 +1,28 @@
+.features {
+
+    margin-bottom: 50px;
+
+  &-img {
+    background-color: #eef4ff;
+    width: 100vw;
+  }
+
+  &-body {
+    margin-top: 50px;
+    padding: 0 16px;
+
+    &__title {
+      margin: 0;
+      font-size: 24px;
+      line-height: 40px;
+      color: #212121;
+    }
+
+    &__subtitle {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 36px;
+      color: #747474;
+    }
+  }
+}
