@@ -50,3 +50,36 @@
     }
   }
 }
+
+
+@media only screen and (min-width: 992px) {
+  .manage {
+    &__inner {
+      padding: 70px 32px;
+    }
+  
+    &-cards {
+      display: grid;
+      grid-template-columns: auto auto;
+      align-items: flex-start;
+      row-gap: 50px;
+      justify-content: space-around;
+    }
+  
+    &-card {
+      width: 387px;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .manage {
+  
+    &-cards {
+      grid-template-columns: auto auto auto;
+      align-items: center;
+      row-gap: 0;
+    }
+  }
+}

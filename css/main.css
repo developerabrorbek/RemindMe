@@ -851,6 +851,28 @@ img {
   color: #747474;
 }
 
+@media only screen and (min-width: 992px) {
+  .manage__inner {
+    padding: 70px 32px;
+  }
+  .manage-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: flex-start;
+    row-gap: 50px;
+    justify-content: space-around;
+  }
+  .manage-card {
+    width: 387px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .manage-cards {
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    row-gap: 0;
+  }
+}
 .features {
   margin-bottom: 50px;
 }
