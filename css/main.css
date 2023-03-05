@@ -1056,7 +1056,12 @@ img {
 .download {
   margin-bottom: 50px;
 }
+.download .wrapper {
+  width: 100%;
+}
 .download__inner {
+  width: 100%;
+  margin: 0 auto;
   padding: 0 16px;
   display: flex;
   align-items: center;
@@ -1122,8 +1127,50 @@ img {
   left: calc(100% - 188px);
 }
 
+@media only screen and (min-width: 576px) {
+  .download__inner {
+    display: flex;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .download-links {
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 25px;
+  }
+  .download-links__load {
+    text-decoration: none;
+    background: #ffffff;
+    border-radius: 1500px;
+    padding: 24px 58px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2d76f9;
+  }
+  .download-links__about {
+    text-decoration: none;
+    background: #2d76f9;
+    border: 1.5px solid #ffffff;
+    border-radius: 1500px;
+    padding: 24px 76px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #ffffff;
+  }
+}
 .comment {
   margin-bottom: 108px;
+}
+.comment-image {
+  display: none;
 }
 .comment__inner {
   padding: 0 16px;
@@ -1170,6 +1217,67 @@ img {
   transform: rotate(180deg);
 }
 
+@media only screen and (min-width: 1200px) {
+  .comment {
+    margin-bottom: 108px;
+  }
+  .comment__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 142px;
+  }
+  .comment-image {
+    display: block;
+    background-color: #EEF4FF;
+    width: 50%;
+    border-radius: 0px 100px 100px 0px;
+  }
+  .comment__inner {
+    padding: 0 16px;
+  }
+  .comment-title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 40px;
+    color: #212121;
+  }
+  .comment-body__user {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+  }
+  .comment-body__user--info-title {
+    margin: 0;
+    font-size: 18px;
+    line-height: 27px;
+    color: #212121;
+  }
+  .comment-body__user--info-subtitle {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #747474;
+  }
+  .comment-body__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    color: #212121;
+  }
+  .comment-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 36px;
+  }
+  .comment-next__right {
+    transform: rotate(180deg);
+  }
+}
 .footer__inner {
   padding: 0 16px;
 }
