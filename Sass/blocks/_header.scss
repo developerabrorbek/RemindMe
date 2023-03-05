@@ -24,7 +24,17 @@
     }
   }
 
+  &-button{
+    width: 40%;
+    display: none;
+    justify-content: flex-end;
+  }
+
   &-btn {
+    display: none;
+  }
+
+  .back-wrapper{
     display: none;
   }
 }
@@ -44,7 +54,7 @@
 @media only screen and (min-width: 414px) {
   .header {
     &__inner {
-      padding: 25px 32px;
+      padding: 25px 24px;
     }
   }
 }
@@ -78,7 +88,7 @@
         list-style-type: none;
 
         &--item {
-          width: 92px;
+          width: 132px;
 
           &-link {
             text-decoration: none;
@@ -95,6 +105,8 @@
         }
       }
     }
+
+    
   }
 }
 
@@ -104,7 +116,14 @@
       padding: 25px 80px;
     }
 
+    &
+
+    &-button{
+      display: flex;
+    }
+
     &-btn {
+      width: 175px;
       display: block;
       border: 1.5px solid #2d76f9;
       border-radius: 50px;
@@ -115,6 +134,7 @@
       line-height: 27px;
       color: #2d76f9;
     }
+
   }
 }
 
