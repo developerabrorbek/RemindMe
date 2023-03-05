@@ -897,6 +897,66 @@ img {
   color: #747474;
 }
 
+@media only screen and (min-width: 576px) {
+  .features {
+    margin-bottom: 64px;
+  }
+  .features__inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .features-body {
+    width: 75%;
+  }
+  .features-body__title {
+    text-align: center;
+  }
+  .features-body__subtitle {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .features {
+    margin-bottom: 72px;
+  }
+  .features__inner {
+    flex-direction: row;
+    column-gap: 42px;
+  }
+  .features-img {
+    width: 50%;
+    border-radius: 0px 100px 100px 0px;
+  }
+  .features-body {
+    width: 40%;
+  }
+  .features-body__title {
+    text-align: left;
+  }
+  .features-body__subtitle {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .features {
+    margin-bottom: 84px;
+  }
+  .features__inner {
+    column-gap: 72px;
+  }
+  .features-body {
+    margin-top: 50px;
+    padding: 0 16px;
+  }
+  .features-body__title {
+    font-size: 32px;
+  }
+  .features-body__subtitle {
+    font-size: 24px;
+  }
+}
 .notify {
   margin-bottom: 50px;
 }
@@ -921,6 +981,78 @@ img {
   color: #747474;
 }
 
+@media only screen and (min-width: 576px) {
+  .notify {
+    margin-bottom: 50px;
+  }
+  .notify__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .notify-body {
+    width: 75%;
+  }
+  .notify-body__title {
+    text-align: center;
+  }
+  .notify-body__subtitle {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .notify {
+    margin-bottom: 64px;
+  }
+  .notify__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .notify-img {
+    order: 2;
+    width: 50%;
+    border-radius: 100px 0px 0px 100px;
+  }
+  .notify-body {
+    padding-left: 36px;
+    width: 40%;
+  }
+  .notify-body__title {
+    text-align: left;
+  }
+  .notify-body__subtitle {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .notify {
+    margin-bottom: 72px;
+  }
+  .notify-body {
+    padding-left: 62px;
+  }
+  .notify-body__title {
+    font-size: 32px;
+  }
+  .notify-body__subtitle {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .notify {
+    margin-bottom: 72px;
+  }
+  .notify-body {
+    padding-left: 100px;
+  }
+  .notify-body__title {
+    font-size: 32px;
+  }
+  .notify-body__subtitle {
+    font-size: 24px;
+  }
+}
 .download {
   margin-bottom: 50px;
 }
