@@ -594,7 +594,7 @@ img {
 }
 .features-img {
   background-color: #eef4ff;
-  width: 100vw;
+  overflow: hidden;
 }
 .features-body {
   margin-top: 50px;
@@ -618,7 +618,7 @@ img {
 }
 .notify-img {
   background-color: #eef4ff;
-  width: 100vw;
+  overflow: hidden;
 }
 .notify-body {
   margin-top: 50px;
@@ -637,6 +637,9 @@ img {
   color: #747474;
 }
 
+.download {
+  margin-bottom: 50px;
+}
 .download__inner {
   padding: 0 16px;
   display: flex;
@@ -701,4 +704,52 @@ img {
 .download .oval-second {
   top: calc(50% + 101px);
   left: 50%;
+}
+
+.comment {
+  margin-bottom: 108px;
+}
+.comment__inner {
+  padding: 0 16px;
+}
+.comment-title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 40px;
+  color: #212121;
+}
+.comment-body__user {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.comment-body__user--info-title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+  color: #212121;
+}
+.comment-body__user--info-subtitle {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #747474;
+}
+.comment-body__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  color: #212121;
+}
+.comment-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 36px;
+}
+.comment-next__right {
+  transform: rotate(180deg);
 }/*# sourceMappingURL=main.css.map */
