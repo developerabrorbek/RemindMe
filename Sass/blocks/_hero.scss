@@ -1,0 +1,149 @@
+.hero {
+
+  &-body {
+    margin-bottom: 50px;
+    padding: 0 8px;
+
+    &__title {
+      margin: 0;
+      font-size: 48px;
+      line-height: 85px;
+      color: #212121;
+      margin-bottom: 30px;
+    }
+
+    &__subtitle {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 36px;
+      color: #747474;
+      margin-bottom: 40px;
+    }
+
+    &__btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 24px 58px;
+      background: #2d76f9;
+      border-radius: 1500px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      color: #ffffff;
+    }
+  }
+
+  &-img {
+    position: relative;
+    height: 500px;
+    background-color: #eef4ff;
+    background-image: url(../../images/hero-img.png);
+    background-repeat: no-repeat;
+    background-size: 164px 340px;
+    background-position: center 80px;
+    overflow: hidden;
+    z-index: -2;
+
+    .oval1, .oval2{
+        position: absolute;
+        top: -125px;
+        left:calc(50% - 310px);
+        z-index: -1;
+        display: inline-block;
+        width: 288px;
+        height: 288px;
+        border: 50px solid #F5F9FF;
+        border-radius: 50%;
+    }
+
+    .oval2{
+        top: 276px;
+        left: calc(50% + 56px);
+    }
+
+
+    &__first,
+    &__second {
+      position: absolute;
+      left: calc(50% - 120px);
+      top: 109px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 120px;
+      padding: 7px 10px 6px 7px;
+      background: #ffffff;
+      box-shadow: 0px 8.53333px 21.3333px rgba(112, 144, 176, 0.1);
+      border-radius: 13.3333px;
+
+      &-text {
+        background: #2d76f9;
+        border-radius: 8px;
+        padding: 4px 13px;
+        font-size: 12.8px;
+        line-height: 19px;
+        color: #ffffff;
+      }
+
+      &-subtext {
+        margin: 0;
+        font-weight: 500;
+        font-size: 12.8px;
+        line-height: 19px;
+        color: #2d76f9;
+      }
+    }
+
+    &__second {
+      width: 150px;
+      left: calc(50% + 12px);
+      top: 205px;
+    }
+
+    &__third {
+      position: absolute;
+      bottom: 119px;
+      left: calc(50% - 150px);
+      padding: 7px 0 3px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 130px;
+      background: #ffffff;
+      box-shadow: 0px 9.216px 23.04px rgba(112, 144, 176, 0.1);
+      border-radius: 14.4px;
+
+      &-titles {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 14px;
+          height: 16px;
+          background-image: url(../../images/icons/hero_user.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+
+      &-title {
+        margin: 0;
+        font-weight: 400;
+        font-size: 8.064px;
+        line-height: 12px;
+        color: #747474;
+      }
+
+      &-subtitle {
+        margin: 0;
+        font-size: 27.648px;
+        line-height: 41px;
+        letter-spacing: 0.05em;
+        color: #2d76f9;
+      }
+    }
+  }
+}
