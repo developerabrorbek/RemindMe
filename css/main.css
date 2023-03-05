@@ -544,4 +544,47 @@ img {
   line-height: 41px;
   letter-spacing: 0.05em;
   color: #2d76f9;
+}
+
+.manage__inner {
+  padding: 50px 32px;
+}
+.manage-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+  padding-left: 0;
+  list-style-type: none;
+}
+.manage-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+}
+.manage-card__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #eef4ff;
+  border-radius: 100px;
+}
+.manage-card__body-title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #212121;
+}
+.manage-card__body-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+  color: #747474;
 }/*# sourceMappingURL=main.css.map */
